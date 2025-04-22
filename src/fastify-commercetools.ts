@@ -5,7 +5,6 @@ import {
   ClientBuilder,
   HttpMiddlewareOptions,
 } from "@commercetools/sdk-client-v2";
-import fetch from "isomorphic-fetch";
 
 import {
   ApiRoot,

@@ -50,11 +50,9 @@
   "dependencies": {
     "@commercetools/platform-sdk": "^2.7.0",
     "@commercetools/sdk-client-v2": "^1.4.0",
-    "fastify-plugin": "^3.0.1",
-    "isomorphic-fetch": "^3.0.0"
+    "fastify-plugin": "^3.0.1"
   },
   "devDependencies": {
-    "@types/isomorphic-fetch": "^0.0.35",
     "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",

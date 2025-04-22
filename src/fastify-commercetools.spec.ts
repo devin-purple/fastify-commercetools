@@ -3,7 +3,6 @@ import { fastify, FastifyInstance } from "fastify";
 import { ClientBuilder, Dispatch } from "@commercetools/sdk-client-v2";
 import { createApiBuilderFromCtpClient } from "@commercetools/platform-sdk";
 import { ByProjectKeyRequestBuilder } from "@commercetools/platform-sdk/dist/declarations/src/generated/client/by-project-key-request-builder";
-import fetch from "isomorphic-fetch";
 import { FastifyCommercetoolsOptions } from "./fastify-commercetools-options";
 import fastifyCommercetools from "./fastify-commercetools";
 declare module "fastify" {
@@ -13,15 +12,6 @@ declare module "fastify" {
     };
   }
 }
-
-jest.mock("isomorphic-fetch", () => {
-  const originalModule = jest.requireActual("isomorphic-fetch");
-  return {
-    __esModule: true,
-    ...originalModule,
-    default: jest.fn(() => Promise.resolve(new Response())),
-  };
-});
 
 const mockClientBuilder = {
   withProjectKey: jest.fn().mockReturnThis(),
