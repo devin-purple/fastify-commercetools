@@ -1,0 +1,1 @@
+{"version":3,"file":"fastify-commercetools.d.ts","sourceRoot":"","sources":["../src/fastify-commercetools.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,eAAe,EAAE,MAAM,SAAS,CAAC;AAc1C,OAAO,EAAE,2BAA2B,EAAE,MAAM,iCAAiC,CAAC;kCAGnE,eAAe,QAClB,2BAA2B,qCACV,IAAI;AAH7B,wBA2CE"}
