@@ -1,5 +1,4 @@
 const { createRequestBuilder } = require('@commercetools/api-request-builder');
-const fetch = require('node-fetch');
 const Connection = require('./lib/commercetools/connection');
 const Repositories = require('./repositories');
 
